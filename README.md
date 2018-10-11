@@ -20,8 +20,6 @@ Raspbian Wheezy and Qt4 is no longer maintained.
 
 **Important** If you're updateing from a previous version always make sure to create an backup in the Phoscon App and read the changelog first.
 
-https://github.com/dresden-elektronik/deconz-rest-plugin/releases
-
 1. Download deCONZ package
 
         wget http://www.dresden-elektronik.de/rpi/deconz/beta/deconz-latest-beta.deb
@@ -59,14 +57,14 @@ https://github.com/dresden-elektronik/deconz-rest-plugin/releases
 
 2. Compile the plugin
 
-        cd deconz-rest-plugin
+        cd basic-aps-plugin
         qmake && make -j2
 
 **Note** On Raspberry Pi 1 use `qmake && make`
 
 3. Replace original plugin
 
-        sudo cp ../libde_rest_plugin.so /usr/share/deCONZ/plugins
+        sudo cp ../libbasic_aps_plugin.so /usr/share/deCONZ/plugins
 
 ## Running
 
