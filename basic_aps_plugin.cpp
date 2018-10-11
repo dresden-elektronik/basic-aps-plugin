@@ -287,4 +287,7 @@ const char *BasicApsPlugin::name()
     return "Basic APS Plugin";
 }
 
-Q_EXPORT_PLUGIN2(basic_aps_plugin, BasicApsPlugin)
+#if QT_VERSION < 0x050000
+    Q_EXPORT_PLUGIN2(basic_aps_plugin, BasicApsPlugin)
+#endif
+
